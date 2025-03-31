@@ -13,3 +13,20 @@ function getComputerChoice () {
     }
 }
 console.log(getComputerChoice());
+
+// HUMAN CHOICE
+// A human will the play against the computer.
+// The function will take in user input and return it.
+// let getHumanChoice = (userChoice) => {return userChoice}
+
+function getHumanChoice (choice) {
+    choice = prompt("Choose between 'rock', 'paper', or 'scissors'!");
+    if (choice === "rock") {
+        return "rock";
+    } else if (choice === "paper") {
+        return "paper";
+    } else {
+        return "scissors";
+    }
+}
+console.log (getHumanChoice())
