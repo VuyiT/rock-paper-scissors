@@ -30,3 +30,9 @@ function getHumanChoice (choice) {
     }
 }
 console.log (getHumanChoice())
+
+// PLAYER SCORE VARIABLES
+// The game keeps track of the players' score using score variables.
+
+let humanScore = 0;
+let computerScore = 0;
