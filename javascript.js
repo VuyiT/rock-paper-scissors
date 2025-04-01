@@ -89,8 +89,22 @@ function playRound(humanChoice, computerChoice) {
             console.log("Invalid Input");
             break;
     }
+    console.log("Player Score - ", humanScore, " : ", "Computer Score - ", computerScore);
 }
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
 
-playRound(humanSelection, computerSelection);
+for (let round = 1; round <= 5; round++) {
+    console.log(`Round ${round}:`);
+    const humanSelection = getHumanChoice();
+    const computerSelection = getComputerChoice();
+    playRound(humanSelection, computerSelection); 
+    console.log("____________________________");
+}
+
+console.log(`Final Player Score: ${humanScore}, Final Computer Score: ${computerScore}`);
+if (humanScore > computerScore) {
+    console.log("You are the overall winner!");
+} else if (humanScore < computerScore) {
+    console.log("I am the overall winner!")
+} else {
+    console.log("It's a tie!")
+}
